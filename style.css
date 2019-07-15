@@ -72,7 +72,7 @@ body {
 
 #drop1:hover .dropdown-menu1 {
     display: block;
-
+    z-index: 98;
 }
 
 .dropdown-menu2 {
@@ -103,10 +103,12 @@ body {
 
 .dropdown-menu2 {
     display: none;
+
 }
 
 #drop2:hover .dropdown-menu2 {
     display: block;
+    z-index: 99;
 
 }
 

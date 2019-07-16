@@ -119,6 +119,9 @@ nav {
 
 .navbar {
     position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
     height: 50px;
     width: 100%;
     display: flex;
@@ -572,7 +575,77 @@ nav {
     color: #aaa;
 }
 
+#categories {
+  display: flex;
+  flex-flow: row wrap;
+  margin: auto;
+  width: 100%;
+  flex-direction: row;
+  font-family: Avalon,sans-serif;
 
+}
+
+.categories-articles a {
+  text-decoration: none;
+  color: #555;;
+}
+
+.categories-articles {
+  flex-basis: 25%;
+  min-width: 350px;
+  padding: 20px;
+}
+
+.categories-articles h3 {
+  color: #f42;
+  font-weight: 700;
+  line-height: 1.1;
+  font-size: 28px;
+}
+
+.categories-articles h6 {
+  color: #f42;
+}
+
+.categories-articles li {
+  border-bottom: 1px solid lightgray;
+  padding: 6px;
+  font-size: 13px;
+  color: #555;
+}
+
+.categories-latest {
+  color: #f42;
+  background-color: #ffece8;
+  font-weight: 600;
+  line-height: 1.5;
+  font-size: 13px;
+  padding-left: 5px;
+  display: flex;
+}
+
+.latest-text {
+  float: left;
+
+}
+
+.latest-text h6 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.categories-latest img {
+  float: right;
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.categories-img {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Snag_1ee4ec82-796x421.png");
+  height: 230px;
+
+}
 
 @media only screen and (max-width: 1000px) {
     nav {

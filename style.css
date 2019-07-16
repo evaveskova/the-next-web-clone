@@ -184,64 +184,88 @@ nav {
 }
 
 .main-articles-container {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 10px;
 }
 
 .main-image-large {
-  grid-column: 1;
-  grid-row: 1 / span 2;
-  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/alan-turing-alan-turing-bill-binary-code-hidden-bank-of-england-796x450.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  height: 100%;
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    background: linear-gradient(rgba(255, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.6)), url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/alan-turing-alan-turing-bill-binary-code-hidden-bank-of-england-796x450.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.main-image-large img {
+    flex: 1;
+    width: 20rem;
+    padding: 10px;
+}
+
+.contain {
+    flex: 2;
+    margin-top: 11rem;
+    margin-bottom: 1rem;
 }
 
 
 .main-image-large p {
-
+    color: white;
+    font-size: 1rem;
 }
 
 .main-image-large h3 {
-
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .main-image-large span {
-
-}
-
-.main-image-small-1 img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
-
-.main-image-small-2 img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
+    color: white;
+    font-size: 0.5rem;
+    padding: 0;
 }
 
 .main-image-small-1 {
-  grid-column: 2;
-  grid-row: 1;
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2019%2F07%2FUntitled-design-73.jpg&signature=3e2addda166202283e2b748983a3a079");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.main-image-small-2 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.main-image-small-1 {
+    grid-column: 2;
+    grid-row: 1;
 }
 
 .main-image-small-2 {
-  grid-column: 2;
-  grid-row: 2;
+    grid-column: 2;
+    grid-row: 2;
 }
+
+.contain-1 {}
 
 @media only screen and (max-width: 1000px) {
     nav {
         display: grid;
         grid-template-columns: 0.2fr 2fr;
-        grid-template-rows: 0.5fr 1fr;
         grid-gap: 0;
     }
 
@@ -286,9 +310,9 @@ nav {
         display: none;
     }
 
-.main-articles-container {
-  display: block;
-}
+    .main-articles-container {
+        display: block;
+    }
 
 }
 

@@ -188,6 +188,7 @@ nav {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 10px;
+    padding: 10px;
 }
 
 .main-image-large {
@@ -199,20 +200,28 @@ nav {
     background-size: cover;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     height: 100%;
     padding: 0 20px;
 }
 
-.main-image-large img {
-    flex: 1;
-    width: 20rem;
+.img-container img {
+    width: 20vh;
     padding: 10px;
+    float: left;
+}
+
+.img-container {
+    flex: 1;
+    width: 100%;
+    text-align: left;
 }
 
 .contain {
-    flex: 2;
-    margin-top: 11rem;
+    width: 100%;
+    text-align: left;
     margin-bottom: 1rem;
+    height: auto;
 }
 
 
@@ -240,27 +249,330 @@ nav {
     background-size: cover;
     object-fit: cover;
     height: 100%;
-    width: 100%;
-    display: flex;
-}
-
-.main-image-small-2 img {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-}
-
-.main-image-small-1 {
     grid-column: 2;
     grid-row: 1;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+
+    padding: 0 20px;
+}
+
+
+
+.contain-1 {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 1rem;
+    height: auto;
+}
+
+.main-image-small-1 p {
+    color: white;
+    font-size: 1rem;
+}
+
+.main-image-small-1 h3 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-image-small-1 span {
+    color: white;
+    font-size: 0.5rem;
+    padding: 0;
 }
 
 .main-image-small-2 {
+    background-image: url("https://img-cdn.tnwcdn.com/image?fit=1280%2C720&url=https%3A%2F%2Fcdn0.tnwcdn.com%2Fwp-content%2Fblogs.dir%2F1%2Ffiles%2F2018%2F09%2FJapan-hacks-first-6-months-bitcoin-cryptocurrency-coincheck-scam.jpg&signature=fd7b53d9f4ac13ee37b1c1256108e45a");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    height: 300px;
+
     grid-column: 2;
     grid-row: 2;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: flex-end;
+
+    padding: 0 20px;
 }
 
-.contain-1 {}
+.main-image-small-2 p {
+    color: white;
+    font-size: 1rem;
+}
+
+.main-image-small-2 h3 {
+    color: white;
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.main-image-small-2 span {
+    color: white;
+    font-size: 0.5rem;
+    padding: 0;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.wrapper a {
+    text-decoration: none;
+}
+
+.latest {
+    color: #f42;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 700;
+    padding: 12px 10px;
+}
+
+.article-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.article {
+    position: relative;
+    flex-basis: 20%;
+    padding: 12px;
+    cursor: pointer;
+    min-width: 230px;
+    width: 15vw;
+}
+
+.article-img-1 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/sale_20488_primary_image_wide-540x270.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-2 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/11/bulgaria-fraudsters-cryptocurrency-illegal-blockchain-theft-scam-hack-ponzi-480x270.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-3 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/sale_20230_primary_image_wide-540x270.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-4 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/pic-516x270.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-5 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Saddo-Android-hed-513x270.jpg");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-6 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/Untitled-design-2-1-516x270.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-7 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/MeToo-2-516x270.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article-img-8 {
+    background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/header-image-galaxy-s10-516x270.png");
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 15vw;
+    max-height: 135px;
+}
+
+.article p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+.article h4 {
+    margin-top: 0px;
+}
+
+.deals {
+    margin: 0 auto;
+    max-width: 1300px;
+}
+
+.header-margin {
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.indexco {
+
+    float: left;
+    text-decoration: none;
+    color: #f42;
+    font-size: 28px;
+    padding-left: 12px;
+}
+
+#middle-deals-right {
+    border-left: 1px solid #f42;
+    border-right: 1px solid #f42;
+}
+
+.deals-header-right {
+    float: right;
+    color: #f42;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 10px;
+    padding: 0px 12px;
+}
+
+.flex-row {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.flex-deals-part {
+    position: relative;
+    flex-basis: 20%;
+    max-width: 25%;
+    padding: 12px;
+    cursor: pointer;
+    min-width: 230px;
+    background: #fffaf8;
+}
+
+.flex-deals-part img {
+    width: 60px;
+    position: absolute;
+    min-width: 60px;
+    max-width: 60px;
+    height: 60px;
+    min-height: 60px;
+    max-height: 60px;
+    top: 25px;
+    left: 25px;
+    z-index: 1;
+}
+
+.deals-head-title {
+    background: #f42;
+    color: #fff;
+    padding: 10.66666667px 16px;
+    padding-left: 84px;
+    margin: 0;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.deals-head {
+    padding: 10.66666667px 16px;
+    padding-left: 84px;
+    color: #000;
+    background: rgba(255, 68, 34, .08);
+    margin: 0;
+}
+
+.deals-head h4 {
+    font-size: 18px;
+    color: #000;
+    margin: 0;
+}
+
+.deals-head h5 {
+    opacity: .5;
+    margin: 0;
+}
+
+.flex-deals-text {
+    padding: 6px 16px;
+}
+
+.flex-deals-text p {
+    padding-left: 5px;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+    margin-right: 1em;
+    line-height: 22px;
+}
+
+.flex-deals-text p {
+    padding-left: 5px;
+    position: relative;
+    font-size: 13px;
+    color: #555;
+    margin-right: 1em;
+    line-height: 22px;
+}
+
+.flex-deals-footer {
+    border-top: 1px solid #ff442240;
+}
+
+.flex-deals-footer p {
+    padding: 6px 16px;
+    color: #555;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.flex-deals-footer span {
+    color: #aaa;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
     nav {
@@ -312,6 +624,97 @@ nav {
 
     .main-articles-container {
         display: block;
+    }
+
+    .main-image-large {
+        height: 300px;
+        margin: 7px;
+    }
+
+    .main-image-small-1 {
+        height: 300px;
+        margin: 7px;
+    }
+
+    .main-image-small-2 {
+        height: 300px;
+        margin: 7px;
+    }
+
+
+    .article {
+        flex-basis: 100%;
+    }
+
+    .article-img-1 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-2 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-3 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-4 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-5 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-6 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-7 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .article-img-8 {
+        float: left;
+        width: 90px;
+        height: 90px;
+        margin-right: 10px;
+    }
+
+    .flex-deals-part {
+        flex-basis: 90%;
+        max-width: 90%
+    }
+
+    .deals-header-right {
+        float: left;
+        display: block;
+        clear: both;
+    }
+
+    #middle-deals-right {
+        border: none;
     }
 
 }

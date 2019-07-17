@@ -748,6 +748,11 @@ nav {
   display: inline;
   justify-content: flex-end;
 }
+
+.strike {
+  text-decoration: line-through;
+}
+
 .socials {
   background: #131313;
   height: auto;

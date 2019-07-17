@@ -187,6 +187,11 @@ nav {
   padding: 10px;
 }
 
+.main-articles-container a {
+  text-decoration: none;
+  color: white;
+}
+
 .main-image-large {
   grid-column: 1;
   grid-row: 1 / span 2;
@@ -566,7 +571,6 @@ nav {
 
 #categories {
   display: flex;
-  justify-content: center;
   flex-flow: row wrap;
   margin: auto;
   width: 100%;
@@ -580,16 +584,20 @@ nav {
 }
 
 .categories-articles {
-  flex-basis: 27%;
+  flex-basis: 31%;
   min-width: 350px;
   padding: 10px;
+
 }
 
 .categories-articles h3 {
-  color: #f42;
   font-weight: 700;
   line-height: 1.1;
   font-size: 28px;
+}
+
+.categories-articles h3 a {
+  color: #f42;
 }
 
 .categories-articles h6 {

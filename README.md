@@ -13,4 +13,4 @@ Used:
 - Emir Vatric -- https://github.com/EmirVatric
 
 **Website**
-https://rawcdn.githack.com/evaveskova/the-next-web-clone/f9e5daf0eca3f28bbe31c0dff9c981e422547a08/index.html
+https://rawcdn.githack.com/evaveskova/the-next-web-clone/b551d4c31c01a006b86e4137956773ac00c7197a/index.html
